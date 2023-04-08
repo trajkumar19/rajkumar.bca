@@ -1,0 +1,383 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "4e02db11",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pds"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "2a8ba004",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a1=pds.Series([\"bca\",\"kumar\",\"pmist\"],index=[1,2,3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "c771dfce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1      bca\n",
+      "2    kumar\n",
+      "3    pmist\n",
+      "dtype: object\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "d290907e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Season={\"Climate\":{1:'sun',2:'moon',3:'rain',4:'cool'},\"dry\":{1:'monday',2:'tuesday',3:'friday',4:'thursday'}}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "4ebb4a6f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d=pds.DataFrame(season,columns=[\"climate\",\"dry\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "73a7cf6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>climate</th>\n",
+       "      <th>dry</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>monday</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>tuesday</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>friday</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>thursday</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  climate       dry\n",
+       "1     NaN    monday\n",
+       "2     NaN   tuesday\n",
+       "3     NaN    friday\n",
+       "4     NaN  thursday"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d7e19628",
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2908df33",
+   "metadata": {},
+   "source": [
+    "# randam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "784f662c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "40c3d5b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rand=np.random.random((10,10))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "dc671c35",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0.72585905 0.70785657 0.03996661 0.89065034 0.72778585 0.84179139\n",
+      "  0.99621476 0.80503708 0.95225079 0.68715866]\n",
+      " [0.9614842  0.04763357 0.54683378 0.41549697 0.37873158 0.74744398\n",
+      "  0.2788943  0.15231417 0.09626097 0.57679524]\n",
+      " [0.77296346 0.43321445 0.14992268 0.79785276 0.47570058 0.09068254\n",
+      "  0.4900477  0.40096466 0.82750157 0.51528492]\n",
+      " [0.59837359 0.86098073 0.53878809 0.82996479 0.71734224 0.45753742\n",
+      "  0.3823146  0.21933985 0.97465929 0.22530205]\n",
+      " [0.80981529 0.99572512 0.05925044 0.31917404 0.54053594 0.85046306\n",
+      "  0.14112543 0.95254622 0.39236661 0.29204345]\n",
+      " [0.37245967 0.41355728 0.10684635 0.53764686 0.60270948 0.63538151\n",
+      "  0.5692966  0.60592066 0.05607341 0.86739766]\n",
+      " [0.12756363 0.81117694 0.95960408 0.74867702 0.86687491 0.83955141\n",
+      "  0.36671296 0.40359171 0.38797563 0.46939941]\n",
+      " [0.92885207 0.38499277 0.0383359  0.48502421 0.39666346 0.79262533\n",
+      "  0.94528192 0.26591174 0.99127006 0.99300512]\n",
+      " [0.25890965 0.71340814 0.11585258 0.50669289 0.16993906 0.83847576\n",
+      "  0.51281463 0.73187242 0.74320753 0.21236264]\n",
+      " [0.14470616 0.18564993 0.71442121 0.16171117 0.05399717 0.76965079\n",
+      "  0.77818185 0.18563815 0.82655261 0.81811576]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(rand)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "483d6d2e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=pds.DataFrame(np.random.randint(0,500,size=(20,6)),columns=list('abcdef'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "aba503d5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "      a    b    c    d    e    f\n",
+      "0   453  423  386   80  404  102\n",
+      "1   381  390   78  275  244  151\n",
+      "2   135  284    0   16  208   91\n",
+      "3    42  188  244  163  179  179\n",
+      "4   157  440  206  361  453  333\n",
+      "5   379  327  286  306   82  212\n",
+      "6   215  355  265  221  319   79\n",
+      "7   454  205  203  142  413   74\n",
+      "8   351  211  472  221  137  292\n",
+      "9   352  366  240   75  112  274\n",
+      "10  133   93  191  202   93   71\n",
+      "11   25  149  306  450  212  331\n",
+      "12  253  122  496  493  436  143\n",
+      "13  268  364  194   82  306  428\n",
+      "14  353  467   42  296   87  183\n",
+      "15  272  102  338  123    4  152\n",
+      "16  376  426  440  267  426   94\n",
+      "17  474  325  404  107  103  215\n",
+      "18    5   89  130  201  458  357\n",
+      "19  139  135   34   50  244  348\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "a732320d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "FileNotFoundError",
+     "evalue": "[Errno 2] No such file or directory: 'c:/users/PRADISH/desktop/rand.csv'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_11136/2937779468.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0ma\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mto_csv\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'c:/users/PRADISH/desktop/rand.csv'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\u001b[0m in \u001b[0;36mto_csv\u001b[1;34m(self, path_or_buf, sep, na_rep, float_format, columns, header, index, index_label, mode, encoding, compression, quoting, quotechar, line_terminator, chunksize, date_format, doublequote, escapechar, decimal, errors, storage_options)\u001b[0m\n\u001b[0;32m   3464\u001b[0m         )\n\u001b[0;32m   3465\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 3466\u001b[1;33m         return DataFrameRenderer(formatter).to_csv(\n\u001b[0m\u001b[0;32m   3467\u001b[0m             \u001b[0mpath_or_buf\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   3468\u001b[0m             \u001b[0mline_terminator\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mline_terminator\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\io\\formats\\format.py\u001b[0m in \u001b[0;36mto_csv\u001b[1;34m(self, path_or_buf, encoding, sep, columns, index_label, mode, compression, quoting, quotechar, line_terminator, chunksize, date_format, doublequote, escapechar, errors, storage_options)\u001b[0m\n\u001b[0;32m   1103\u001b[0m             \u001b[0mformatter\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mfmt\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1104\u001b[0m         )\n\u001b[1;32m-> 1105\u001b[1;33m         \u001b[0mcsv_formatter\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msave\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1106\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1107\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mcreated_buffer\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\io\\formats\\csvs.py\u001b[0m in \u001b[0;36msave\u001b[1;34m(self)\u001b[0m\n\u001b[0;32m    235\u001b[0m         \"\"\"\n\u001b[0;32m    236\u001b[0m         \u001b[1;31m# apply compression and byte/text conversion\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 237\u001b[1;33m         with get_handle(\n\u001b[0m\u001b[0;32m    238\u001b[0m             \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mfilepath_or_buffer\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    239\u001b[0m             \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mmode\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\io\\common.py\u001b[0m in \u001b[0;36mget_handle\u001b[1;34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)\u001b[0m\n\u001b[0;32m    700\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mioargs\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mencoding\u001b[0m \u001b[1;32mand\u001b[0m \u001b[1;34m\"b\"\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mioargs\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mmode\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    701\u001b[0m             \u001b[1;31m# Encoding\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 702\u001b[1;33m             handle = open(\n\u001b[0m\u001b[0;32m    703\u001b[0m                 \u001b[0mhandle\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    704\u001b[0m                 \u001b[0mioargs\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mmode\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: 'c:/users/PRADISH/desktop/rand.csv'"
+     ]
+    }
+   ],
+   "source": [
+    "a.to_csv('c:/users/PRADISH/desktop/rand.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "592e1d9c",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "\"['f'] not found in axis\"",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_11136/902270641.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0md\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdrop\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"f\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0maxis\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\util\\_decorators.py\u001b[0m in \u001b[0;36mwrapper\u001b[1;34m(*args, **kwargs)\u001b[0m\n\u001b[0;32m    309\u001b[0m                     \u001b[0mstacklevel\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mstacklevel\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    310\u001b[0m                 )\n\u001b[1;32m--> 311\u001b[1;33m             \u001b[1;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    312\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    313\u001b[0m         \u001b[1;32mreturn\u001b[0m \u001b[0mwrapper\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\frame.py\u001b[0m in \u001b[0;36mdrop\u001b[1;34m(self, labels, axis, index, columns, level, inplace, errors)\u001b[0m\n\u001b[0;32m   4904\u001b[0m                 \u001b[0mweight\u001b[0m  \u001b[1;36m1.0\u001b[0m     \u001b[1;36m0.8\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4905\u001b[0m         \"\"\"\n\u001b[1;32m-> 4906\u001b[1;33m         return super().drop(\n\u001b[0m\u001b[0;32m   4907\u001b[0m             \u001b[0mlabels\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mlabels\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4908\u001b[0m             \u001b[0maxis\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0maxis\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\u001b[0m in \u001b[0;36mdrop\u001b[1;34m(self, labels, axis, index, columns, level, inplace, errors)\u001b[0m\n\u001b[0;32m   4148\u001b[0m         \u001b[1;32mfor\u001b[0m \u001b[0maxis\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mlabels\u001b[0m \u001b[1;32min\u001b[0m \u001b[0maxes\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mitems\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4149\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mlabels\u001b[0m \u001b[1;32mis\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 4150\u001b[1;33m                 \u001b[0mobj\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mobj\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_drop_axis\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mlabels\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0maxis\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mlevel\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mlevel\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0merrors\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0merrors\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   4151\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4152\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0minplace\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\u001b[0m in \u001b[0;36m_drop_axis\u001b[1;34m(self, labels, axis, level, errors)\u001b[0m\n\u001b[0;32m   4183\u001b[0m                 \u001b[0mnew_axis\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0maxis\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdrop\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mlabels\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mlevel\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mlevel\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0merrors\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0merrors\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4184\u001b[0m             \u001b[1;32melse\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 4185\u001b[1;33m                 \u001b[0mnew_axis\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0maxis\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdrop\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mlabels\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0merrors\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0merrors\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   4186\u001b[0m             \u001b[0mresult\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mreindex\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m**\u001b[0m\u001b[1;33m{\u001b[0m\u001b[0maxis_name\u001b[0m\u001b[1;33m:\u001b[0m \u001b[0mnew_axis\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4187\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\indexes\\base.py\u001b[0m in \u001b[0;36mdrop\u001b[1;34m(self, labels, errors)\u001b[0m\n\u001b[0;32m   6015\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mmask\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0many\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   6016\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0merrors\u001b[0m \u001b[1;33m!=\u001b[0m \u001b[1;34m\"ignore\"\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 6017\u001b[1;33m                 \u001b[1;32mraise\u001b[0m \u001b[0mKeyError\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34mf\"{labels[mask]} not found in axis\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   6018\u001b[0m             \u001b[0mindexer\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mindexer\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;33m~\u001b[0m\u001b[0mmask\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   6019\u001b[0m         \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdelete\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mindexer\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"['f'] not found in axis\""
+     ]
+    }
+   ],
+   "source": [
+    "d.drop(\"f\",axis=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "61d0cbe0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "893c363f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e847418f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5787743a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "98276e96",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf23462a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
